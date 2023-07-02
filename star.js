@@ -1,11 +1,5 @@
 // *** Задание под звездочкой
-// 1. У вас есть массив с информацией о популярных режиссёрах.Отобразите информацию о каждом режиссёре на странице.
-// - Сохраните в переменную массив.
-// - Вызовите метод `forEach` у массива.
-// - В функцию обработчик добавьте код, который относится к работе с DOM
-// - В найденные элементы на странице добавьте информацию из каждого элемента массива.
-// - Создайте новый массив`topFilmsList`, в нём должны быть лучшие фильмы режиссёров(они хранятся в полях`top_rated_film`).
-
+// 1. У вас есть массив с информацией о популярных режиссёрах.
 
 const directors = [
   {
@@ -52,19 +46,28 @@ const directors = [
   },
 ];
 
-let text = document.getElementById('text');
-directors.forEach(function (items) {
-  let div = document.createElement("div");
-  div.innerText = items;
-  text.appendChild(div);
+const list = document.querySelector('.list')
+const directorsNew = []
+
+// Отобразите информацию о каждом режиссёре на странице.
+// - Сохраните в переменную массив.
+// - Вызовите метод `forEach` у массива.
+// - В функцию обработчик добавьте код, который относится к работе с DOM
+// - В найденные элементы на странице добавьте информацию из каждого элемента массива.
+// - Создайте новый массив`topFilmsList`, в нём должны быть лучшие фильмы режиссёров(они хранятся в полях`top_rated_film`).
+
+directors.forEach((item) => {
+  const { name, career, films, top_rated_film } = item
+  const info =
+    `<h1>${name}</h1>`
+      `<p>${career}</p>`
+      `<p>${films}</p>`
+      `<p>${top_rated_film}</p>`
+  const div = document.createElement('div')
+  div.insertAdjacentHTML('beforeend', info)
+  list.appendChild(div)
+  directorsNew.push(top_rated_film)
 })
+console.log(directorsNew);
 
-
-//   const topFilmsList=[]
-
-//   function getDirectors(){
-//     // getUserName();
-//     // checkSpam();
-//     // userPhoto.src=photo.value;
-// }
 // button.addEventListener('click',getDirectors);
