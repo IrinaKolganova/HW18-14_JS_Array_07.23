@@ -63,95 +63,320 @@ console.log(negativeGrade.length);
 //         - Если оценка находится в диапазоне от 20 до 39, преобразуйте её в "D"
 //         - Если оценка ниже 20, преобразуйте её в "E"
 const [one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve] = grades;
+const list = document.querySelector('.list');
 function getGrade() {
+
   if (one >= 80) {
-    const p = document.createElement('p');
-    p.textContent = "A";
+    const grade1 = document.createElement('p');
+    grade1.textContent = 'A';
+    list.append(grade1);
   }
   else if (one >= 60 && one < 80) {
-    const p = document.createElement('p');
-    p.textContent = "B";
+    const grade1 = document.createElement('p');
+    grade1.textContent = 'B';
+    list.append(grade1);
   }
   else if (one >= 40 && one < 60) {
-    const p = document.createElement('p');
-    p.textContent = "C";
+    const grade1 = document.createElement('p');
+    grade1.textContent = 'C';
+    list.append(grade1);
   }
   else if (one >= 20 && one < 40) {
-    const p = document.createElement('p');
-    p.textContent = "D";
+    const grade1 = document.createElement('p');
+    grade1.textContent = 'D';
+    list.append(grade1);
   }
   else {
-    const p = document.createElement('p');
-    p.textContent = "E";
+    const grade1 = document.createElement('p');
+    grade1.textContent = 'E';
+    list.append(grade1);
   }
-  // Кот, подскажи пожалуйста, почему по коду выше не создается параграф на странице с оценкой (по нажатию на кнопку)? В чём ошибка?
-  // Т.к. по коду выше вывести значение не получилось - остальные 11 значений решила пока вывести в консоль.
-  if (two >= 80) { console.log("A"); }
-  else if (two >= 60 && two < 80) { console.log("B"); }
-  else if (two >= 40 && two < 60) { console.log("C"); }
-  else if (two >= 20 && two < 40) { console.log("D"); }
-  else { console.log("E"); }
 
-  if (three >= 80) { console.log("A"); }
-  else if (three >= 60 && three < 80) { console.log("B"); }
-  else if (three >= 40 && three < 60) { console.log("C"); }
-  else if (three >= 20 && three < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (two >= 80) {
+    const grade2 = document.createElement('p');
+    grade2.textContent = 'A';
+    list.append(grade2);
+  }
+  else if (two >= 60 && two < 80) {
+    const grade2 = document.createElement('p');
+    grade2.textContent = 'B';
+    list.append(grade2);
+  }
+  else if (two >= 40 && two < 60) {
+    const grade2 = document.createElement('p');
+    grade2.textContent = 'C';
+    list.append(grade2);
+  }
+  else if (two >= 20 && two < 40) {
+    const grade2 = document.createElement('p');
+    grade2.textContent = 'D';
+    list.append(grade2);
+  }
+  else {
+    const grade2 = document.createElement('p');
+    grade2.textContent = 'E';
+    list.append(grade2);
+  }
 
-  if (four >= 80) { console.log("A"); }
-  else if (four >= 60 && four < 80) { console.log("B"); }
-  else if (four >= 40 && four < 60) { console.log("C"); }
-  else if (four >= 20 && four < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (three >= 80) {
+    const grade3 = document.createElement('p');
+    grade3.textContent = 'A';
+    list.append(grade3);
+  }
+  else if (three >= 60 && three < 80) {
+    const grade3 = document.createElement('p');
+    grade3.textContent = 'B';
+    list.append(grade3);
+  }
+  else if (three >= 40 && three < 60) {
+    const grade3 = document.createElement('p');
+    grade3.textContent = 'C';
+    list.append(grade3);
+  }
+  else if (three >= 20 && three < 40) {
+    const grade3 = document.createElement('p');
+    grade3.textContent = 'D';
+    list.append(grade3);
+  }
+  else {
+    const grade3 = document.createElement('p');
+    grade3.textContent = 'E';
+    list.append(grade3);
+  }
 
-  if (five >= 80) { console.log("A"); }
-  else if (five >= 60 && five < 80) { console.log("B"); }
-  else if (five >= 40 && five < 60) { console.log("C"); }
-  else if (five >= 20 && five < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (four >= 80) {
+    const grade4 = document.createElement('p');
+    grade4.textContent = 'A';
+    list.append(grade4);
+  }
+  else if (four >= 60 && four < 80) {
+    const grade4 = document.createElement('p');
+    grade4.textContent = 'B';
+    list.append(grade4);
+  }
+  else if (four >= 40 && four < 60) {
+    const grade4 = document.createElement('p');
+    grade4.textContent = 'C';
+    list.append(grade4);
+  }
+  else if (four >= 20 && four < 40) {
+    const grade4 = document.createElement('p');
+    grade4.textContent = 'D';
+    list.append(grade4);
+  }
+  else {
+    const grade4 = document.createElement('p');
+    grade4.textContent = 'E';
+    list.append(grade4);
+  }
 
-  if (six >= 80) { console.log("A"); }
-  else if (six >= 60 && six < 80) { console.log("B"); }
-  else if (six >= 40 && six < 60) { console.log("C"); }
-  else if (six >= 20 && six < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (five >= 80) {
+    const grade5 = document.createElement('p');
+    grade5.textContent = 'A';
+    list.append(grade5);
+  }
+  else if (five >= 60 && five < 80) {
+    const grade5 = document.createElement('p');
+    grade5.textContent = 'B';
+    list.append(grade5);
+  }
+  else if (five >= 40 && five < 60) {
+    const grade5 = document.createElement('p');
+    grade5.textContent = 'C';
+    list.append(grade5);
+  }
+  else if (five >= 20 && five < 40) {
+    const grade5 = document.createElement('p');
+    grade5.textContent = 'D';
+    list.append(grade5);
+  }
+  else {
+    const grade5 = document.createElement('p');
+    grade5.textContent = 'E';
+    list.append(grade5);
+  }
 
-  if (seven >= 80) { console.log("A"); }
-  else if (seven >= 60 && seven < 80) { console.log("B"); }
-  else if (seven >= 40 && seven < 60) { console.log("C"); }
-  else if (seven >= 20 && seven < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (six >= 80) {
+    const grade6 = document.createElement('p');
+    grade6.textContent = 'A';
+    list.append(grade6);
+  }
+  else if (six >= 60 && six < 80) {
+    const grade6 = document.createElement('p');
+    grade6.textContent = 'B';
+    list.append(grade6);
+  }
+  else if (six >= 40 && six < 60) {
+    const grade6 = document.createElement('p');
+    grade6.textContent = 'C';
+    list.append(grade6);
+  }
+  else if (six >= 20 && six < 40) {
+    const grade6 = document.createElement('p');
+    grade6.textContent = 'D';
+    list.append(grade6);
+  }
+  else {
+    const grade6 = document.createElement('p');
+    grade6.textContent = 'E';
+    list.append(grade6);
+  }
 
-  if (eight >= 80) { console.log("A"); }
-  else if (eight >= 60 && eight < 80) { console.log("B"); }
-  else if (eight >= 40 && eight < 60) { console.log("C"); }
-  else if (eight >= 20 && eight < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (seven >= 80) {
+    const grade7 = document.createElement('p');
+    grade7.textContent = 'A';
+    list.append(grade7);
+  }
+  else if (seven >= 60 && seven < 80) {
+    const grade7 = document.createElement('p');
+    grade7.textContent = 'B';
+    list.append(grade7);
+  }
+  else if (seven >= 40 && seven < 60) {
+    const grade7 = document.createElement('p');
+    grade7.textContent = 'C';
+    list.append(grade7);
+  }
+  else if (seven >= 20 && seven < 40) {
+    const grade7 = document.createElement('p');
+    grade7.textContent = 'D';
+    list.append(grade7);
+  }
+  else {
+    const grade7 = document.createElement('p');
+    grade7.textContent = 'E';
+    list.append(grade7);
+  }
 
-  if (nine >= 80) { console.log("A"); }
-  else if (nine >= 60 && nine < 80) { console.log("B"); }
-  else if (nine >= 40 && nine < 60) { console.log("C"); }
-  else if (nine >= 20 && nine < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (eight >= 80) {
+    const grade8 = document.createElement('p');
+    grade8.textContent = 'A';
+    list.append(grade8);
+  }
+  else if (eight >= 60 && eight < 80) {
+    const grade8 = document.createElement('p');
+    grade8.textContent = 'B';
+    list.append(grade8);
+  }
+  else if (eight >= 40 && eight < 60) {
+    const grade8 = document.createElement('p');
+    grade8.textContent = 'C';
+    list.append(grade8);
+  }
+  else if (eight >= 20 && eight < 40) {
+    const grade8 = document.createElement('p');
+    grade8.textContent = 'D';
+    list.append(grade8);
+  }
+  else {
+    const grade8 = document.createElement('p');
+    grade8.textContent = 'E';
+    list.append(grade8);
+  }
 
-  if (ten >= 80) { console.log("A"); }
-  else if (ten >= 60 && ten < 80) { console.log("B"); }
-  else if (ten >= 40 && ten < 60) { console.log("C"); }
-  else if (ten >= 20 && ten < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (nine >= 80) {
+    const grade9 = document.createElement('p');
+    grade9.textContent = 'A';
+    list.append(grade9);
+  }
+  else if (nine >= 60 && nine < 80) {
+    const grade9 = document.createElement('p');
+    grade9.textContent = 'B';
+    list.append(grade9);
+  }
+  else if (nine >= 40 && nine < 60) {
+    const grade9 = document.createElement('p');
+    grade9.textContent = 'C';
+    list.append(grade9);
+  }
+  else if (nine >= 20 && nine < 40) {
+    const grade9 = document.createElement('p');
+    grade9.textContent = 'D';
+    list.append(grade9);
+  }
+  else {
+    const grade9 = document.createElement('p');
+    grade9.textContent = 'E';
+    list.append(grade9);
+  }
 
-  if (eleven >= 80) { console.log("A"); }
-  else if (eleven >= 60 && eleven < 80) { console.log("B"); }
-  else if (eleven >= 40 && eleven < 60) { console.log("C"); }
-  else if (eleven >= 20 && eleven < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (ten >= 80) {
+    const grade10 = document.createElement('p');
+    grade10.textContent = 'A';
+    list.append(grade10);
+  }
+  else if (ten >= 60 && ten < 80) {
+    const grade10 = document.createElement('p');
+    grade10.textContent = 'B';
+    list.append(grade10);
+  }
+  else if (ten >= 40 && ten < 60) {
+    const grade10 = document.createElement('p');
+    grade10.textContent = 'C';
+    list.append(grade10);
+  }
+  else if (ten >= 20 && ten < 40) {
+    const grade10 = document.createElement('p');
+    grade10.textContent = 'D';
+    list.append(grade10);
+  }
+  else {
+    const grade10 = document.createElement('p');
+    grade10.textContent = 'E';
+    list.append(grade10);
+  }
 
-  if (twelve >= 80) { console.log("A"); }
-  else if (twelve >= 60 && twelve < 80) { console.log("B"); }
-  else if (twelve >= 40 && twelve < 60) { console.log("C"); }
-  else if (twelve >= 20 && twelve < 40) { console.log("D"); }
-  else { console.log("E"); }
+  if (eleven >= 80) {
+    const grade11 = document.createElement('p');
+    grade11.textContent = 'A';
+    list.append(grade11);
+  }
+  else if (eleven >= 60 && eleven < 80) {
+    const grade11 = document.createElement('p');
+    grade11.textContent = 'B';
+    list.append(grade11);
+  }
+  else if (eleven >= 40 && eleven < 60) {
+    const grade11 = document.createElement('p');
+    grade11.textContent = 'C';
+    list.append(grade11);
+  }
+  else if (eleven >= 20 && eleven < 40) {
+    const grade11 = document.createElement('p');
+    grade11.textContent = 'D';
+    list.append(grade11);
+  }
+  else {
+    const grade11 = document.createElement('p');
+    grade11.textContent = 'E';
+    list.append(grade11);
+  }
 
+  if (twelve >= 80) {
+    const grade12 = document.createElement('p');
+    grade12.textContent = 'A';
+    list.append(grade12);
+  }
+  else if (twelve >= 60 && one < 80) {
+    const grade12 = document.createElement('p');
+    grade12.textContent = 'B';
+    list.append(grade12);
+  }
+  else if (twelve >= 40 && twelve < 60) {
+    const grade12 = document.createElement('p');
+    grade12.textContent = 'C';
+    list.append(grade12);
+  }
+  else if (twelve >= 20 && twelve < 40) {
+    const grade12 = document.createElement('p');
+    grade12.textContent = 'D';
+    list.append(grade12);
+  }
+  else {
+    const grade12 = document.createElement('p');
+    grade12.textContent = 'E';
+    list.append(grade12);
+  }
 };
 
 //     Выведите все найденные значения на экран.
